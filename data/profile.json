@@ -1,0 +1,89 @@
+{
+  "name": "Fardeen Shariff",
+  "about": "I'm an AI and Generative AI focused engineer with a deep passion for building intelligent systems that solve real-world problems. My work spans across large language models, agentic AI systems, retrieval-augmented generation, and production-grade ML pipelines. I thrive at the intersection of cutting-edge AI research and practical engineering — turning complex AI capabilities into reliable, scalable products. I bring strong, hands-on professional experience in AI and Generative AI, and I'm constantly exploring the frontier of what's possible with autonomous AI agents and multi-agent systems.",
+  "skills": {
+    "Agentic AI & AI Agents": ["Autonomous AI Agents", "Multi-Agent Systems", "Agent Orchestration", "Tool-Using Agents", "ReAct Pattern", "Planning & Reasoning Agents", "Human-in-the-Loop Agents"],
+    "LLMs & Foundation Models": ["GPT-4", "Google Gemini", "Claude", "LLaMA", "Mistral", "Prompt Engineering", "Fine-tuning", "RLHF", "Few-Shot & Zero-Shot Learning"],
+    "RAG & Retrieval Systems": ["LangChain", "LlamaIndex", "Vector Databases", "Pinecone", "ChromaDB", "Weaviate", "Hybrid Search", "Semantic Search", "Re-ranking"],
+    "Generative AI Applications": ["Chatbots & Conversational AI", "Content Generation", "Code Generation", "Text Summarization", "AI-Powered Search", "Knowledge Base Systems"],
+    "ML & Deep Learning": ["PyTorch", "TensorFlow", "Transformers", "NLP", "Computer Vision", "Model Evaluation", "Experiment Tracking"],
+    "Cloud & MLOps": ["AWS", "Google Cloud Platform", "Azure", "Docker", "Kubernetes", "MLflow", "CI/CD for ML", "Model Serving"],
+    "Programming & Frameworks": ["Python", "TypeScript", "JavaScript", "SQL", "FastAPI", "Next.js", "React", "Node.js"]
+  },
+  "projects": [
+    {
+      "title": "Campaign Decision Assistant",
+      "description": "An AI decision-support API that retrieves evidence from multiple data sources and generates evidence-backed recommendations for human review. Uses a deterministic pipeline with LLM synthesis — retrieval, conflict detection, and claim validation are all handled programmatically, with the LLM used only for final narrative synthesis. Features include cross-source conflict detection, claim-rule validation, missing data surfacing, and a human approval gate.",
+      "tech": ["Python", "FastAPI", "OpenAI GPT-4o-mini", "Pydantic", "Deterministic Pipeline"],
+      "link": ""
+    },
+    {
+      "title": "Agentic RAG System",
+      "description": "Built an autonomous AI agent system with retrieval-augmented generation that can plan, reason, and execute multi-step research tasks. Features tool-using agents that dynamically decide which knowledge sources to query, with re-ranking and self-reflection capabilities for improved answer quality.",
+      "tech": ["LangChain", "GPT-4", "ChromaDB", "ReAct Agent", "Python"],
+      "link": ""
+    },
+    {
+      "title": "Multi-Agent Orchestration Platform",
+      "description": "Designed and built a multi-agent system where specialized AI agents collaborate to solve complex tasks — each agent has distinct expertise and tools, coordinated through an orchestration layer that handles task decomposition, delegation, and result synthesis.",
+      "tech": ["Python", "LangGraph", "OpenAI", "Agent Framework", "AsyncIO"],
+      "link": ""
+    },
+    {
+      "title": "Enterprise Knowledge Base with RAG",
+      "description": "Production-grade retrieval-augmented generation system for enterprise document Q&A. Implements hybrid search combining dense vector retrieval with sparse keyword matching, cross-encoder re-ranking, and citation-grounded responses to minimize hallucination.",
+      "tech": ["LlamaIndex", "Pinecone", "OpenAI", "FastAPI", "React"],
+      "link": ""
+    },
+    {
+      "title": "AI Portfolio with Voice Interface",
+      "description": "This very portfolio — a Next.js application featuring a Gemini-powered conversational AI that answers questions about my work, voice input/output using browser-native speech APIs, and an animated AI avatar with reactive states.",
+      "tech": ["Next.js", "Google Gemini API", "Framer Motion", "TypeScript", "Web Speech API"],
+      "link": ""
+    }
+  ],
+  "experience_summary": "Strong, hands-on professional experience in AI and Generative AI. Focused on building and deploying LLM-powered applications, agentic AI systems, and production ML pipelines. Experienced in taking AI projects from research and prototyping through to production deployment at scale.",
+  "experience_timeline": [
+    {
+      "phase": "Pioneering Agentic AI & Multi-Agent Systems",
+      "description": "Designing and building autonomous AI agent systems — multi-agent orchestration, tool-using agents, and human-in-the-loop workflows for complex enterprise use cases."
+    },
+    {
+      "phase": "Advanced Generative AI & LLM Applications",
+      "description": "Building production-grade generative AI applications including conversational AI systems, RAG pipelines, and AI-powered decision support tools using state-of-the-art foundation models."
+    },
+    {
+      "phase": "Deepened Focus on LLMs & RAG Systems",
+      "description": "Specialized in large language model applications and retrieval-augmented generation — building knowledge systems that ground AI responses in real data to minimize hallucination."
+    },
+    {
+      "phase": "ML Engineering & Production Systems",
+      "description": "Developed end-to-end machine learning pipelines, from data processing and model training to deployment and monitoring in cloud environments."
+    },
+    {
+      "phase": "Foundation in AI & Software Engineering",
+      "description": "Built a strong foundation in programming, algorithms, and core AI/ML concepts — establishing the engineering skills that underpin everything since."
+    }
+  ],
+  "focus_areas": [
+    "Agentic AI & Autonomous Agent Systems",
+    "Multi-Agent Orchestration & Collaboration",
+    "Building and deploying LLM-powered applications",
+    "Retrieval-Augmented Generation (RAG) systems",
+    "Prompt engineering and fine-tuning foundation models",
+    "AI system architecture for enterprise use cases",
+    "MLOps and production ML pipelines",
+    "Generative AI for real-world problem solving"
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science",
+      "institution": "Update with your institution"
+    }
+  ],
+  "contact": {
+    "linkedin": "https://www.linkedin.com/in/fardeen-ahmed-903220382",
+    "github": ""
+  }
+}
