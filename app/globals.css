@@ -2,26 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: #05060a;
+    color: white;
+  }
+
+  ::selection {
+    background-color: rgba(124, 58, 237, 0.4);
+    color: white;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #05060a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(124, 58, 237, 0.3);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(124, 58, 237, 0.5);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .glass {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.4),
+                0 0 40px rgba(124, 58, 237, 0.2);
+  }
+
+  .gradient-mesh {
+    background: linear-gradient(
+      -45deg,
+      #05060a,
+      #0a0520,
+      #120a30,
+      #05060a,
+      #0a1020,
+      #05060a
+    );
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  .font-space-grotesk {
+    font-family: var(--font-heading), 'Space Grotesk', sans-serif;
+  }
+
+  .font-inter {
+    font-family: var(--font-body), 'Inter', sans-serif;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
