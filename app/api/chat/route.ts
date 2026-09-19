@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server';
-import { getGeminiResponse } from '@/lib/gemini';
+import { getGroqResponse } from '@/lib/groq';
 
 export async function POST(request: Request) {
   try {
-    if (!process.env.GEMINI_API_KEY) {
+    if (!process.env.GROQ_API_KEY) {
       return NextResponse.json(
-        { error: 'API key not configured. Please add GEMINI_API_KEY to .env.local' },
+        { error: 'GROQ_API_KEY is not configured' },
         { status: 500 }
       );
     }
@@ -20,7 +20,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const response = await getGeminiResponse(message, history);
+    const response = await getGroqResponse(message, history);
 
     return NextResponse.json({ response });
   } catch (error) {
